@@ -1,0 +1,71 @@
+
+*{
+    font-family: 'Source Sans Pro', sans-serif ;
+    font-size: 20px;
+}
+
+
+h2{
+    color:rgb(255, 145, 0);
+    text-shadow: 2px 2px black;
+}
+
+input{
+    margin: 10px;
+}
+
+.dp input{
+    width: 80%;
+    height: 30px;
+}
+
+body {
+    background-image: url(https://source.unsplash.com/collection/386111/1600x900);
+}
+
+.container{
+    margin-top: 50px;
+}
+
+.container_menu{
+
+    display: flex;
+    justify-content: center;
+}
+
+
+.title{
+    background-color: orange;
+    width: 30%;
+}
+
+.title svg{
+    fill: red;
+    max-width: 300px;
+    width: 25vh;
+    height: 25vh;
+}
+
+.content{
+    background-color: rgb(247, 220, 68);
+    width: 70%;
+}
+
+.content label{
+    font-size: 19px;
+}
+
+.content, .title{
+    text-align: center;
+    padding: 2rem;
+}
+
+.resumo{
+    margin-top: 15px;
+    background-color: rgb(240, 240, 157);
+}
+
+h1{
+    color: red;
+    text-shadow: 2px 2px black;
+}
