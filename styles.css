@@ -20,7 +20,9 @@ input{
 }
 
 body {
-    background-image: url(https://source.unsplash.com/collection/386111/1600x900);
+    background-image: url(https://source.unsplash.com/4_jhDO54BYg);
+    background-size: 2756px 1837.5px;
+
 }
 
 .container{
@@ -28,27 +30,26 @@ body {
 }
 
 .container_menu{
-
-    display: flex;
+    display:block;
     justify-content: center;
+    
+    margin-bottom: 20px;
 }
 
 
 .title{
     background-color: orange;
-    width: 30%;
+    
 }
 
 .title svg{
     fill: red;
-    max-width: 300px;
-    width: 25vh;
-    height: 25vh;
+    width: 100px;
 }
 
 .content{
     background-color: rgb(247, 220, 68);
-    width: 70%;
+    
 }
 
 .content label{
