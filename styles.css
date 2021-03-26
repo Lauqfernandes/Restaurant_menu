@@ -25,6 +25,11 @@ body {
 
 }
 
+button{
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
 .container{
     margin-top: 50px;
 }
@@ -34,6 +39,10 @@ body {
     justify-content: center;
     
     margin-bottom: 20px;
+}
+
+.resumo{
+    margin-top: 15px;
 }
 
 
@@ -61,10 +70,7 @@ body {
     padding: 2rem;
 }
 
-.resumo{
-    margin-top: 15px;
-    background-color: rgb(240, 240, 157);
-}
+
 
 h1{
     color: red;
