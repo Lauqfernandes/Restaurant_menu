@@ -36,7 +36,7 @@ function resumo() {
    
 function  pratoPrincipal(name){
     var rads = document.getElementsByName(name);
-    var escolhido, vbf=35, vpf = 30, vcp=32;
+    var escolhido, vbf=28, vpf = 25, vcp=27;
     
     for(var i = 0; i < rads.length; i++){
      if(rads[i].checked){
@@ -64,7 +64,7 @@ function  pratoPrincipal(name){
 function acompanhamentos(name){
     var checkboxes = document.getElementsByName(name);
     var escolhidos = [];
-    var va = 10, vs = 8, vb=10, vm = 12, count = 0; 
+    var va = 8, vs = 8, vb=10, vm = 12, count = 0; 
     
     for(var i = 0; i < checkboxes.length; i++){
         if(checkboxes[i].checked){
