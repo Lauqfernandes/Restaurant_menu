@@ -1,5 +1,5 @@
 # Restaurant_menu
-Projeto de menu de restaurante desenvolvido com HTML, CSS, JavaScript e Bootstrap.
+Menu de restaurante desenvolvido com HTML, CSS, JavaScript e Bootstrap.
 
 ## Layout
 ![image](https://user-images.githubusercontent.com/69986144/112988243-ff75b680-9139-11eb-95cb-430fe9c8c408.png)
