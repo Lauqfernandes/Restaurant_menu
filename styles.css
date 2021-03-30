@@ -4,6 +4,10 @@
     font-size: 20px;
 }
 
+h1{
+    color: red;
+    text-shadow: 2px 2px black;
+}
 
 h2{
     color:rgb(255, 145, 0);
@@ -21,7 +25,7 @@ input{
 
 body {
     background-image: url(https://source.unsplash.com/4_jhDO54BYg);
-    background-size: 2756px 1837.5px;
+    background-size: cover;
 
 }
 
@@ -40,11 +44,6 @@ button{
     
     margin-bottom: 20px;
 }
-
-.resumo{
-    margin-top: 15px;
-}
-
 
 .title{
     background-color: orange;
@@ -67,12 +66,10 @@ button{
 
 .content, .title{
     text-align: center;
+
     padding: 2rem;
 }
 
-
-
-h1{
-    color: red;
-    text-shadow: 2px 2px black;
+.modal{
+    text-align: center;
 }

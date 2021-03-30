@@ -23,42 +23,73 @@
 
       </div>
         <div class="content">
+          
+        <form>
+
           <div class="dp">
-            
-            <form>
+           
               <h2> Dados pessoais</h2>
 
               <label for="nome">Nome:</label><input type="text" id="nome"><br>
               <label for="telefone">Telefone:</label><input type="text" id="telefone"><br>
               <label for="email">Email:</label><input type="email" id="email"><br>
-            </div>
 
-              <h2>Prato principal</h2>
+          </div>
 
-                <input type="radio" id="pp1" name="prato_principal" value="0"><label for="pp1">Bife acebolado</label>
-                <input type="radio" id="pp2" name="prato_principal" value="1"><label for="pp2">Peito de frango grelhado</label>
-                <input type="radio" id="pp3" name="prato_principal" value="2"><label for="pp3">Carne de panela</label>
+          <h2>Prato principal</h2>
 
-                <h2>Acompanhamentos</h2>
+            <input type="radio" id="pp1" name="prato_principal" value="0"><label for="pp1">Bife acebolado</label>
+            <input type="radio" id="pp2" name="prato_principal" value="1"><label for="pp2">Peito de frango grelhado</label>
+            <input type="radio" id="pp3" name="prato_principal" value="2"><label for="pp3">Carne de panela</label>
 
-                <input type="checkbox" id="a1" name="option_a" value="0"> 
-                <label for="a1">Arroz</label><br>
-                <input type="checkbox" id="a2" name="option_a" value="1"> 
-                <label for="a2">Salada</label><br>
-                <input type="checkbox" id="a3" name="option_a" value="2"> 
-                <label for="a3">Batata Frita</label><br>
-                <input type="checkbox" id="a4" name="option_a" value="3"> 
-                <label for="a4">Maionese</label><br>
+            <h2>Acompanhamentos</h2>
 
-              </form>
+            <input type="checkbox" id="a1" name="option_a" value="0"> 
+            <label for="a1">Arroz</label><br>
+            <input type="checkbox" id="a2" name="option_a" value="1"> 
+            <label for="a2">Salada</label><br>
+            <input type="checkbox" id="a3" name="option_a" value="2"> 
+            <label for="a3">Batata Frita</label><br>
+            <input type="checkbox" id="a4" name="option_a" value="3"> 
+            <label for="a4">Maionese</label><br>
+
+            <h2>Convênio</h2>
+          
+            <div class="selecionar">
+            <select class="form-select" aria-label="Default select example">
+              <option name = "option_b" value="0">Nenhum</option>
+              <option name = "option_b" value="1">Empresa X</option>
+              <option name = "option_b" value="2">Empresa Y</option>
+            </select>
+          </div>
+
+          </form>
                 
-              <button onclick="resumo()" class="btn btn-danger">Finalizar</button>
-      
-            <div id="resumo">
+            <button  onclick="resumo()" type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#mymodal1">
+              Finalizar
+            </button>
+            <button onclick="Limpar()" class="btn btn-danger">Limpar</button>
 
+            <div class="modal fade" id="mymodal1" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-scrollable">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="staticBackdropLabel">Resumo do pedido</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <div id="resumo">
+
+                    </div>
+                  </div>
+                  <div class="modal-footer">
+                    <button class="btn btn-warning" data-bs-dismiss="modal">Alterar</button>
+                  </div>
+                </div>
+              </div>
             </div>
 
-            <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal fade" id="mymodal2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
               <div class="modal-dialog">
                 <div class="modal-content">
                   <div class="modal-header">
@@ -75,6 +106,7 @@
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
@@ -83,6 +115,6 @@
                 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/js/bootstrap.bundle.min.js" integrity="sha384-JEW9xMcG8R+pH31jmWH6WWP0WintQrMb4s7ZOdauHnUtxwoG2vI5DkLtS3qm9Ekf" crossorigin="anonymous"></script>
   <script src="func.js"></script>
-  
+
 </body>
 </html>
