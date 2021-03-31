@@ -50,7 +50,7 @@ function  pratoPrincipal(name){
     var rads = document.getElementsByName(name);
     var escolhido, vbf=28, vpf = 25, vcp=27;
     
-    let pratoEscolhido = [
+    let pratosCadastrados = [
         {nome: "Bife acebolado", preço:vbf},
         {nome: "Peito de frango grelhado", preço:vpf},
         {nome: "Carne de panela", preço:vcp},
@@ -62,9 +62,9 @@ function  pratoPrincipal(name){
      }
     }
 
-    total = total + pratoEscolhido[escolhido].preço;
+    total = total + pratosCadastrados[escolhido].preço;
 
-    return `<br>${pratoEscolhido[escolhido].nome}..................R$${pratoEscolhido[escolhido].preço}`;
+    return `<br>${pratosCadastrados[escolhido].nome}..................R$${pratosCadastrados[escolhido].preço}`;
 }
 
 
@@ -73,7 +73,7 @@ function acompanhamentos(name){
     var escolhidos = [];
     var va = 8.00, vs = 8.00, vb=10.00, vm = 12.00, count = 0; 
 
-    let acompanhamentosEscolhidos = [
+    let acompanhamentosCadastrados = [
         {nome: "Arroz", preço:va},
         {nome: "Salada", preço:vs},
         {nome: "Batata frita", preço:vb},
@@ -83,8 +83,8 @@ function acompanhamentos(name){
     for(var i = 0; i < checkboxes.length; i++){
         if(checkboxes[i].checked){
             count++;
-            escolhidos.push(`<br>${acompanhamentosEscolhidos[i].nome}........................R$${acompanhamentosEscolhidos[i].preço}`);
-            total = total + acompanhamentosEscolhidos[i].preço;
+            escolhidos.push(`<br>${acompanhamentosCadastrados[i].nome}........................R$${acompanhamentosCadastrados[i].preço}`);
+            total = total + acompanhamentosCadastrados[i].preço;
         }
     }
 
@@ -104,6 +104,7 @@ function Limpar(){
 function Desconto(name){
     var select = document.getElementsByName(name);
     var escolhido;
+    
     let conveniosCadastrados = [
         {nome: "Nenhum", desconto: 0},
         {nome: "Empresa X", desconto: 0.10},
