@@ -18,7 +18,7 @@ function resumo() {
     else{
 
         document.getElementById("resumo").innerHTML = 
-        `<div resumo">
+        `<div">
         <h2> Reveja seus dados e pedido: </h2><br>
          
         <h3>Dados pessoais: </h3><br>
@@ -31,13 +31,13 @@ function resumo() {
         <h5>Acompanhamentos:</h5> ${acompanhamentos('option_a')}<br><br>
 
         <h3>Convênio</h3>
-        Convenio: ${Desconto("option_b")}
+        Convenio: ${desconto("option_b")}
     
         <br><br><h2>Total: </h2>
         <h3>R$${total}</h3>
 
         
-        <button type="button" data-bs-dismiss="modal" onclick="Limpar()"  class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mymodal2">
+        <button type="button" data-bs-dismiss="modal" onclick="limpar()" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#mymodal2">
         Confirmar
         </button>
     
@@ -48,12 +48,12 @@ function resumo() {
    
 function  pratoPrincipal(name){
     var rads = document.getElementsByName(name);
-    var escolhido, vbf=28, vpf = 25, vcp=27;
+    var escolhido;
     
     let pratosCadastrados = [
-        {nome: "Bife acebolado", preço:vbf},
-        {nome: "Peito de frango grelhado", preço:vpf},
-        {nome: "Carne de panela", preço:vcp},
+        {nome: "Bife acebolado", preço:28},
+        {nome: "Peito de frango grelhado", preço:25},
+        {nome: "Carne de panela", preço:27},
     ]
 
     for(var i = 0; i < rads.length; i++){
@@ -71,13 +71,13 @@ function  pratoPrincipal(name){
 function acompanhamentos(name){
     var checkboxes = document.getElementsByName(name);
     var escolhidos = [];
-    var va = 8.00, vs = 8.00, vb=10.00, vm = 12.00, count = 0; 
+    var  count = 0; 
 
     let acompanhamentosCadastrados = [
-        {nome: "Arroz", preço:va},
-        {nome: "Salada", preço:vs},
-        {nome: "Batata frita", preço:vb},
-        {nome: "Maionese", preço:vm},
+        {nome: "Arroz", preço:8},
+        {nome: "Salada", preço:8},
+        {nome: "Batata frita", preço:10},
+        {nome: "Maionese", preço:12},
     ]
     
     for(var i = 0; i < checkboxes.length; i++){
@@ -95,13 +95,13 @@ function acompanhamentos(name){
     return escolhidos;
 }
 
-function Limpar(){
+function limpar(){
     total = 0.00;
     document.querySelector('form').reset();
     document.getElementById("resumo").innerHTML = ""
 }
 
-function Desconto(name){
+function desconto(name){
     var select = document.getElementsByName(name);
     var escolhido;
     
@@ -117,7 +117,7 @@ function Desconto(name){
         }
     }
 
-    totalDesconto = total*conveniosCadastrados[escolhido].desconto
+    totalDesconto = total * conveniosCadastrados[escolhido].desconto
 
     total = total - (totalDesconto);
 
