@@ -42,11 +42,10 @@ function resumo() {
         </button>
     
         </div>`
-
     }
 }
    
-function  pratoPrincipal(name){
+function pratoPrincipal(name){
     var rads = document.getElementsByName(name);
     var escolhido;
     
