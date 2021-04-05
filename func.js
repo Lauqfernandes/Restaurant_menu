@@ -31,7 +31,7 @@ function resumo() {
         <h5>Acompanhamentos:</h5> ${acompanhamentos('option_a')}<br><br>
 
         <h3>Convênio</h3>
-        Convenio: ${desconto("option_b")}
+        Convênio: ${desconto("option_b")}
     
         <br><br><h2>Total: </h2>
         <h3>R$${total}</h3>
@@ -120,7 +120,7 @@ function desconto(name){
 
     total = total - (totalDesconto);
 
-    return `${conveniosCadastrados[escolhido].nome}, Desconto de: R$${totalDesconto}`;
+    return `${conveniosCadastrados[escolhido].nome}, Desconto de: R$${totalDesconto.toFixed(2)}`;
 
 }
 
